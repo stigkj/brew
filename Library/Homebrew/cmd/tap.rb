@@ -45,7 +45,7 @@ module Homebrew
     elsif ARGV.named.empty?
       puts Tap.names
     else
-      tap = Tap.fetch(ARGV.named[0])s
+      tap = Tap.fetch(ARGV.named[0])
       begin
         tap.install :clone_target => ARGV.named[1],
                     :full_clone   => full_clone?,
